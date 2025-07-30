@@ -75,7 +75,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <span className="text-white text-xl font-semibold">
-              Tek<span className="text-[#98be2f]">Mindz</span>DAI
+              Tek<span className="text-[#97bb2e]">MindzDAI</span>
             </span>
           </div>
 
@@ -86,7 +86,7 @@ const Navbar = () => {
                 <button
                   key={link}
                   onClick={() => handleLinkClick(link)}
-                  className={`relative px-3 py-2 text-sm font-medium transition-colors duration-200 hover:text-[#98be2f] ${
+                  className={`relative px-3 py-2 text-sm font-medium transition-colors duration-200 hover:text-[#97bb2e] ${
                     activeLink === link
                       ? 'text-white'
                       : 'text-gray-300'
@@ -94,7 +94,7 @@ const Navbar = () => {
                 >
                   {link}
                   {activeLink === link && (
-                    <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#98be2f] rounded-full"></div>
+                    <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#97bb2e] rounded-full"></div>
                   )}
                 </button>
               ))}
@@ -103,7 +103,7 @@ const Navbar = () => {
 
           {/* Contact Us Button - Desktop */}
           <div className="hidden md:block">
-            <button className="bg-transparent border-2 border-[#98be2f] text-[#98be2f] hover:bg-[#98be2f] hover:text-slate-800 px-6 py-2 rounded-full text-sm font-medium transition-all duration-200">
+            <button className="bg-transparent border-2 border-[#ffffff]/50 text-[#97bb2e] hover:bg-[#97bb2e] hover:text-slate-800 px-6 py-2 rounded-full text-sm font-medium transition-all duration-200">
               Contact Us
             </button>
           </div>

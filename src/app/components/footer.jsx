@@ -4,7 +4,7 @@ import { Facebook, Instagram, Youtube } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-16">
+    <footer className="py-16" style={{background: 'linear-gradient(to bottom right, #00386C, #020C15)'}}>
       <div className="container mx-auto px-4 text-center">
         {/* Logo */}
         <div className="mb-8">

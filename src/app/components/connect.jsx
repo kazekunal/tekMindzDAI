@@ -27,7 +27,7 @@ export default function ContactForm() {
   return (
     <div className="min-h-screen flex">
       {/* Left Section - Get In Touch */}
-      <div className="w-1/2 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 relative overflow-hidden">
+      <div className="w-1/2 relative overflow-hidden" style={{background: 'linear-gradient(to bottom right, #00386C, #020C15)'}}>
         {/* Background decorative elements */}
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-600 rounded-full opacity-20 blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
         <div className="absolute top-1/2 right-1/4 w-32 h-32 bg-purple-500 rounded-full opacity-30 blur-2xl"></div>

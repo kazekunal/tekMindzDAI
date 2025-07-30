@@ -72,7 +72,7 @@ const Leadership = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-5xl md:text-6xl font-light text-gray-800 mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
             Leadership
           </h1>
           <p className="text-gray-600 text-lg max-w-4xl mx-auto leading-relaxed">
