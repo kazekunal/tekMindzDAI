@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -49,23 +48,6 @@ const HeroSection = () => {
         .space-grotesk {
           font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }
-        .transform-button {
-          position: relative;
-          overflow: hidden;
-        }
-        .transform-button::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(90deg, transparent, rgba(150, 187, 47, 0.2), transparent);
-          transition: left 0.6s ease;
-        }
-        .transform-button:hover::before {
-          left: 100%;
-        }
       `}</style>
       
       <div className="min-h-screen relative overflow-hidden space-grotesk" style={{background: 'linear-gradient(to bottom right, #00386C, #020C15)'}}>
@@ -83,14 +65,14 @@ const HeroSection = () => {
             <Breadcrumb>
               <BreadcrumbList>
                 <BreadcrumbItem>
-                  <BreadcrumbLink href="#" className="text-gray-400 hover:text-gray-300 Roboto">
-                    Overview
+                  <BreadcrumbLink href="/" className="text-gray-400 hover:text-gray-300 Roboto">
+                    Home
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="text-gray-500" />
                 <BreadcrumbItem>
-                  <BreadcrumbPage className="text-white Roboto">
-                    Offerings
+                  <BreadcrumbPage href="/transform" className="text-white Roboto">
+                    Transform With Us
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -100,7 +82,7 @@ const HeroSection = () => {
           <div className="grid lg:grid-cols-[7fr_3fr] gap-12 items-center min-h-[70vh]">
             {/* Left Content */}
             <div className="space-y-8">
-              {/* Badge */}
+              {/* Badge
               <div className="inline-flex items-center space-x-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl px-5 py-4">
                 <div className="w-6 h-6 flex items-center justify-center">
                   <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -108,38 +90,37 @@ const HeroSection = () => {
                   </svg>
                 </div>
                 <span className="text-white text-base font-medium text-lg" style={{fontFamily: 'Roboto, sans-serif'}}>Data Intelligence</span>
-              </div>
+              </div> */}
 
               {/* Main Heading */}
               <div className="space-y-4">
                 <h1 className="text-5xl lg:text-6xl text-white leading-tight space-grotesk">
-                  <span className='font-bold'>Transforming Data</span> Into
-                  <span className="block"> Strategic Advantage</span>
+                <span className="block"> Empowering your digital future through</span>
+                  <span className='font-bold'>intelligent software services</span>
+                  
                 </h1>
               </div>
+            
 
               {/* Description */}
               <p className="text-gray-300 text-m leading-relaxed max-w-xl space-grotesk">
-                Unleash the power of your enterprise data through cutting-edge software 
-                services that drive actionable insights and intelligent decision-making
+              At TekMindz, we partner with organizations to turn data into strategic advantage. With the evolving landscape of Artificial Intelligence, we're taking confident steps forward—helping our clients explore, pilot, and adopt AI in practical, impactful ways.
               </p>
 
-              {/* CTA Button with Link */}
-              <div className="pt-4">
-                <Link href="/transform" className="inline-block">
-                  <button className="group transform-button bg-transparent border-2 border-[#ffffff]/50 text-[#96BB2F] hover:bg-[#96BB2F] hover:text-slate-800 hover:border-[#96BB2F] px-8 py-3 rounded-full text-sm font-medium transition-all duration-500 flex items-center space-x-2 Roboto hover:shadow-lg hover:shadow-[#96BB2F]/20 hover:scale-105 active:scale-95 hover:cursor-pointer" >
-                    <span className='font-bold transition-all duration-300'>Transform with Us</span>
-                    <svg 
-                      className="w-4 h-4 transition-all duration-300 group-hover:translate-x-1 group-hover:scale-110" 
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </button>
-                </Link>
-              </div>
+              {/* CTA Button */}
+              {/* <div className="pt-4">
+                <button className="group bg-transparent border-2 border-[#ffffff]/50 text-[#96BB2F] hover:bg-[#96BB2F] hover:text-slate-800 px-8 py-3 rounded-full text-sm font-medium transition-all duration-300 flex items-center space-x-2 Roboto">
+                  <span className='font-bold'>Transform with Us</span>
+                  <svg 
+                    className="w-4 h-4 transition-transform group-hover:translate-x-1" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div> */}
 
               {/* Slide Navigation */}
               <div className="flex items-center space-x-6 pt-8">
@@ -170,7 +151,7 @@ const HeroSection = () => {
             <div className="relative lg:h-[600px] flex items-center justify-center">
               <div className="relative w-96 h-96">
                 <Image
-                  src="/hero.png"
+                  src="/transform1.png"
                   alt="Data Intelligence Visualization"
                   width={600}
                   height={384}
