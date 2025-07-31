@@ -5,7 +5,6 @@ import Footer from '@/app/components/footer'
 import Navbar from '@/app/components/transform_navbar'
 import React from 'react'
 import GenAIUseCasesComponent from '@/app/components/ekmUseCase'
-// import EnterpriseKnowledgeBanner from '@/app/components/ekmBanner'
 import ReusableBanner from '@/app/components/banner'
 import { useState } from 'react'
 
