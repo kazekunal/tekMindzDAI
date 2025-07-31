@@ -10,10 +10,22 @@ import { useState } from 'react'
 
 function page() {
     const [activeTab, setActiveTab] = useState('genai');
+    const tabs = [
+        { key: 'genai', label: 'GenAI Services' },
+        { key: 'usecases', label: 'Use Cases' }
+      ];
   return (
     <div>
         <Navbar/>
-        <CustomerExperienceBanner activeTab={activeTab} setActiveTab={setActiveTab} />
+        <ReusableBanner
+            breadcrumb="Generative AI / Services"
+            titleMain="Customer"
+            titleHighlight="Experience"
+            description="Enhance your customer interactions with AI-powered solutions that personalize experiences, improve support efficiency, and drive deeper customer engagement and satisfaction."
+            tabs={tabs}
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+        />
         {activeTab === 'genai' ? <TekMindzGenAIServices /> : <UseCasesComponent />}
         <ContactForm/>
         <Footer/>
