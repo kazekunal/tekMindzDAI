@@ -68,9 +68,9 @@ export default function TekMindzFeatures() {
           <p className="text-gray-300 text-lg mb-8  mx-auto">
             Transform with Us — and let's build the future, step by step.
           </p>
-          <button className="bg-[#96BB2F] hover:cursor-pointer text-white font-medium px-8 py-3 rounded-full transition-colors duration-200">
+          <a className="bg-[#96BB2F] hover:cursor-pointer text-white font-medium px-8 py-3 rounded-full transition-colors duration-200" href='/transform/services'>
             Explore Our Services →
-          </button>
+          </a>
         </div>
       </div>
     </div>

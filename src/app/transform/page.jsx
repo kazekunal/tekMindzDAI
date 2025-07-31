@@ -8,6 +8,7 @@ import SolutionsSection from '../components/transform_sol'
 import TekMindzFeatures from '../components/transform_why'
 
 function page() {
+    
   return (
     <div>
         <Navbar/>

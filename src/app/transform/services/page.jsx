@@ -5,6 +5,9 @@ import Navbar from '@/app/components/transform_navbar'
 import FitSection from '@/app/components/transform_fit'
 import React from 'react'
 import DataEngineeringAnalytics from '@/app/components/services_data'
+import HowWeDoIt from '@/app/components/doit'
+import DigitalTransformation from '@/app/components/digitalTransform'
+import PlatformDevelopment from '@/app/components/platformDev'
 
 function page() {
   return (
@@ -72,7 +75,7 @@ function page() {
             layout="right"
             showGlow={true}
             />
-            
+            <PlatformDevelopment/>
             <FitSection
             title={{
                 main: "Our",
@@ -102,6 +105,24 @@ function page() {
                 "responsible",
                 "AI"
             ]}
+            />
+            <DigitalTransformation/>
+            <HowWeDoIt/>
+            <FitSection
+            title={{
+                main: "The",
+                highlight: "Outcome"
+            }}
+            description="A smarter, faster, AI-infused business that delivers better outcomes, improves customer experience, and prepares you for the next decade of innovation."
+            image={{
+                src: "/services6.png",
+                alt: "AI Transform Visualization"
+            }}
+            bulletPoints={[
+                "In today's hyper-competitive market, AI isn't just an enhancement—it's a differentiator. Whether you're trying to stay relevant, drive efficiency, or launch new revenue models, TekMindz empowers you to make that leap intelligently and confidently."
+            ]}
+            layout="left"
+            showGlow={true}
             />
         <ContactForm/>
         <Footer/>
