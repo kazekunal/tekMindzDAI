@@ -11,9 +11,41 @@ function page() {
   return (
     <div>
         <Navbar/>
-        <HeroSection/>
+        {/* <HeroSection/>
+         */}
+         <HeroSection
+            title={{
+                main: "Empowering your digital future through",
+                highlight: "intelligent software services"
+            }}
+            description="At TekMindz, we partner with organizations to turn data into strategic advantage. With the evolving landscape of Artificial Intelligence, we're taking confident steps forward—helping our clients explore, pilot, and adopt AI in practical, impactful ways."
+            image={{
+                src: "/transform1.png",
+                alt: "Data Intelligence Visualization",
+                width: 600,
+                height: 384
+            }}
+            breadcrumb={{
+                items: [
+                { label: "Home", href: "/" },
+                { label: "Transform With Us", href: "/transform", isActive: true }
+                ]
+            }}
+            />
         <SolutionsSection/>
-        <FitSection/>
+        <FitSection
+            title={{
+                main: "Where We",
+                highlight: "Fit In"
+            }}
+            description="Whether you're exploring your first AI use case or looking to enhance existing software with smarter capabilities, we offer flexible engagement models – from consulting to full-stack implementation."
+            image={{
+                src: "/transform2.png",
+                alt: "AI Transform Visualization"
+            }}
+            layout="left"
+            showGlow={true}
+            />
         <TekMindzFeatures/>
         <ContactForm/>
         <Footer/>
