@@ -104,7 +104,7 @@ function page() {
             showGlow={true}
             />
             <CaseStudiesSection title="Case Studies" caseStudySets={caseStudiesData} />
-            <InsightsSection/>
+            {/* <InsightsSection/> */}
             
             <ContactForm/>
             <Footer/>
