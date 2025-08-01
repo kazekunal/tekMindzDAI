@@ -13,7 +13,8 @@ const AcceleratorsSection = ({
   // Styling props
   backgroundColor = "bg-gray-100",
   cardBackgroundColor = "bg-white",
-  titleColor = "text-gray-800",
+  mainTitleColor = "text-gray-800", // Main title color
+  cardTitleColor = "text-gray-800",  // Card title color
   subtitleColor = "text-gray-600",
   descriptionColor = "text-gray-500",
   buttonTextColor = "text-blue-600",
@@ -41,7 +42,7 @@ const AcceleratorsSection = ({
             </>
           )}
           
-          <h1 className={`text-4xl md:text-5xl font-semibold ${titleColor}`}>
+          <h1 className={`text-4xl md:text-5xl font-semibold ${mainTitleColor}`}>
             {title}
           </h1>
         </div>
@@ -64,7 +65,7 @@ const AcceleratorsSection = ({
               
               {/* Content */}
               <div className="p-6">
-                <h3 className={`text-lg font-semibold ${titleColor} mb-2 leading-tight`}>
+                <h3 className={`text-lg font-semibold ${cardTitleColor} mb-2 leading-tight`}>
                   {card.title}
                 </h3>
                 

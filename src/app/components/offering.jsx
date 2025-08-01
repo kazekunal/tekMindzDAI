@@ -1,35 +1,31 @@
 'use client'
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, RotateCcw, Zap, TrendingUp } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const OfferingsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const offerings = [
     {
-      icon: RotateCcw,
-      iconColor: "text-[#98be2f]",
+      icon: "/offer1.png",
       title: "Generative AI",
       description: "Cutting-edge generative AI solutions that create new content, designs, and insights from existing data. Our generative AI offerings include large language models, content generation platforms, synthetic data creation, creative design tools, and powered innovation frameworks.",
       link: "/genai"
     },
     {
-      icon: Zap,
-      iconColor: "text-yellow-400",
+      icon: "/offer2.png",
       title: "Agentic AI",
       description: "Enterprise-grade artificial intelligence solutions that automate complex processes, enhance decision-making, and drive business growth. We offer custom AI model development, AI integration services, computer vision systems, natural language processing, and AI strategy consulting.",
       link: "/agentic-ai"
     },
     {
-      icon: TrendingUp,
-      iconColor: "text-blue-400",
+      icon: "/offer3.png",
       title: "Data Analytics",
       description: "Comprehensive data analytics solutions that help organizations extract valuable insights from complex datasets. Our offerings include predictive analytics, data visualization, business intelligence, and custom analytics dashboards tailored to your specific industry needs.",
       link: "/data-analytics"
     },
     {
-      icon: TrendingUp,
-      iconColor: "text-blue-400",
+      icon: "/offer4.png",
       title: "RAG",
       description: "Transform your AI's capabilities with Retrieval-Augmented Generation (RAG). This advanced technique empowers Large Language Models by fetching real-time, factual information from your specific knowledge bases before answering a query.",
       link: "/RAG"
@@ -113,28 +109,33 @@ const OfferingsSection = () => {
           {/* Carousel Container */}
           <div className="overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {getVisibleCards().map((offering, index) => {
-                const IconComponent = offering.icon;
-                return (
-                  <div key={currentIndex + index} className="rounded-2xl p-8 transform transition-all duration-300 hover:scale-105">
-                    <div className="w-16 h-16 bg-blue-700/50 rounded-xl flex items-center justify-center mb-6">
-                      <IconComponent className={offering.iconColor} size={28} />
-                    </div>
-                    
-                    <h3 className="text-2xl font-bold text-white mb-4 space-grotesk">{offering.title}</h3>
-                    
-                    <p className="text-gray-300 text-base leading-relaxed mb-8 roboto">
-                      {offering.description}
-                    </p>
-                    
-                    <a href={offering.link}>
-                      <button className="border border-[#98be2f] text-[#98be2f] px-6 py-3 rounded-full hover:bg-[#98be2f] hover:text-blue-900 transition-all duration-300 flex items-center gap-2 font-medium">
-                        Learn More <ChevronRight size={16} />
-                      </button>
-                    </a>
+              {getVisibleCards().map((offering, index) => (
+                <div key={currentIndex + index} className="rounded-2xl p-8 transform transition-all duration-300 hover:scale-105">
+                  <div className="w-16 h-16 flex items-center justify-center mb-6">
+                    <img 
+                      src={offering.icon} 
+                      alt={`${offering.title} icon`}
+                      className="w-16 h-16 object-contain"
+                      onError={(e) => {
+                        // Fallback to hide broken images
+                        e.target.style.display = 'none';
+                      }}
+                    />
                   </div>
-                );
-              })}
+                  
+                  <h3 className="text-2xl font-bold text-white mb-4 space-grotesk">{offering.title}</h3>
+                  
+                  <p className="text-gray-300 text-base leading-relaxed mb-8 roboto">
+                    {offering.description}
+                  </p>
+                  
+                  <a href={offering.link}>
+                    <button className="border border-[#98be2f] text-[#98be2f] px-6 py-3 rounded-full hover:bg-[#98be2f] hover:text-blue-900 transition-all duration-300 flex items-center gap-2 font-medium">
+                      Learn More →
+                    </button>
+                  </a>
+                </div>
+              ))}
             </div>
           </div>
 

@@ -199,7 +199,8 @@ function page() {
                 cards={ragAcceleratorsData}
                 backgroundColor="bg-gradient-to-br from-[#00386C] to-[#020C15]"
                 cardBackgroundColor="bg-white"
-                titleColor="text-black"
+                mainTitleColor="text-white"    // Main title color
+                cardTitleColor="text-black"    // Individual card titles color
                 subtitleColor="text-gray-800"
                 descriptionColor="text-gray-600"
                 buttonTextColor="text-blue-600"

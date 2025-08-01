@@ -1,5 +1,6 @@
 'use client'
 import React from 'react';
+import Image from 'next/image';
 import { Facebook, Instagram, Youtube } from 'lucide-react';
 
 export default function Footer() {
@@ -8,9 +9,14 @@ export default function Footer() {
       <div className="container mx-auto px-4 text-center">
         {/* Logo */}
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-white">
-            Tek<span className="text-[#98be2f]">Mindz</span><span className="text-[#98be2f]">DAI</span>
-          </h1>
+          <Image
+            src="/title.png"
+            alt="TekMindzDAI Logo"
+            width={150}
+            height={80}
+            className="mx-auto"
+            priority
+          />
         </div>
 
         {/* Social Media Icons */}
