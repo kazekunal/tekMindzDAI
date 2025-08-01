@@ -7,7 +7,6 @@ import CaseStudiesSection from '@/app/components/case'
 import React from 'react'
 import ContactForm from '@/app/components/connect'
 import Footer from '@/app/components/footer'
-import InsightsSection from '@/app/components/insights'
 
 function page() {
 
