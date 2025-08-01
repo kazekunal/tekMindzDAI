@@ -1,10 +1,10 @@
 'use client'
+import React from 'react'
 import HeroSection from '@/app/components/transform_hero'
 import Navbar from '@/app/components/transform_navbar'
 import FitSection from '@/app/components/transform_fit'
 import ServicesSection from '@/app/components/services'
 import CaseStudiesSection from '@/app/components/case'
-import React from 'react'
 import ContactForm from '@/app/components/connect'
 import Footer from '@/app/components/footer'
 
@@ -14,17 +14,20 @@ function page() {
         {
           image: "/genai4.png",
           title: "Customer Experience",
-          description: "Enhance your customer interactions with AI-powered solutions that personalize experiences, improve support efficiency, and drive deeper customer engagement and satisfaction."
+          description: "Enhance your customer interactions with AI-powered solutions that personalize experiences, improve support efficiency, and drive deeper customer engagement and satisfaction.",
+          link: ""
         },
         {
           image: "/genai5.png",
           title: "Enterprise Knowledge Management",
-          description: "Transform how your organization captures, organizes, and leverages knowledge with our AI-driven knowledge management solutions that make information accessible and actionable."
+          description: "Transform how your organization captures, organizes, and leverages knowledge with our AI-driven knowledge management solutions that make information accessible and actionable.",
+          link: ""
         },
         {
           image: "/genai6.png",
           title: "Software Development Life Cycle Optimization",
-          description: "Accelerate your development processes with AI tools that streamline coding, testing, and deployment while improving quality and reducing time-to-market."
+          description: "Accelerate your development processes with AI tools that streamline coding, testing, and deployment while improving quality and reducing time-to-market.",
+          link: ""
         }
       ];
 
@@ -103,7 +106,6 @@ function page() {
             showGlow={true}
             />
             <CaseStudiesSection title="Case Studies" caseStudySets={caseStudiesData} />
-            {/* <InsightsSection/> */}
             
             <ContactForm/>
             <Footer/>
