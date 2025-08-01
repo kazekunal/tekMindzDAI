@@ -15,19 +15,19 @@ function page() {
           image: "/genai4.png",
           title: "Customer Experience",
           description: "Enhance your customer interactions with AI-powered solutions that personalize experiences, improve support efficiency, and drive deeper customer engagement and satisfaction.",
-          link: ""
+          link: "/genai/customer-experiences"
         },
         {
           image: "/genai5.png",
           title: "Enterprise Knowledge Management",
           description: "Transform how your organization captures, organizes, and leverages knowledge with our AI-driven knowledge management solutions that make information accessible and actionable.",
-          link: ""
+          link: "/genai/ekm"
         },
         {
           image: "/genai6.png",
           title: "Software Development Life Cycle Optimization",
           description: "Accelerate your development processes with AI tools that streamline coding, testing, and deployment while improving quality and reducing time-to-market.",
-          link: ""
+          link: "/genai/sdlc"
         }
       ];
 
