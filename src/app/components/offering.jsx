@@ -56,7 +56,7 @@ const OfferingsSection = () => {
               <p className="text-gray-300 text-base leading-relaxed mb-8 roboto">
                 Cutting-edge generative AI solutions that create new content, designs, and insights from existing data. Our generative AI offerings include large language models, content generation platforms, synthetic data creation, creative design tools, and powered innovation frameworks.
               </p>
-              <Link href="/generative-ai">
+              <Link href="/RAG">
               <button className="border border-[#98be2f] text-[#98be2f] px-6 py-3 rounded-full hover:bg-[#98be2f] hover:text-blue-900 transition-all duration-300 flex items-center gap-2 font-medium">
                 Learn More <ChevronRight size={16} />
               </button></Link>
