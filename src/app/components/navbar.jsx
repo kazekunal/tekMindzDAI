@@ -74,7 +74,20 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <span className="text-white text-xl font-semibold">
+            <img 
+              src="/title.png" 
+              alt="TekMindzDAI" 
+              className="h-10 w-auto"
+              onError={(e) => {
+                // Fallback to text if image fails to load
+                e.target.style.display = 'none';
+                e.target.nextSibling.style.display = 'inline';
+              }}
+            />
+            <span 
+              className="text-white text-xl font-semibold hidden"
+              style={{ display: 'none' }}
+            >
               Tek<span className="text-[#97bb2e]">MindzDAI</span>
             </span>
           </div>
