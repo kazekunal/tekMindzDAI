@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import ContactForm from '../components/connect'
 import Footer from '../components/footer'
@@ -5,10 +6,44 @@ import FitSection from '../components/transform_fit'
 import HeroSection from '../components/transform_hero'
 import Navbar from '../components/transform_navbar'
 import SolutionsSection from '../components/transform_sol'
-import TekMindzFeatures from '../components/transform_why'
+import ReusableFeaturesSection from '../components/transform_why'
 
 function page() {
-    
+    const tekMindzData = {
+        title: (
+          <>
+            Why Choose <span className="font-bold text-gray-900">TekMindz</span>?
+          </>
+        ),
+        features: [
+            {
+                image: "transform3.png",
+                title: "Focused On Practical AI Adoption"
+              },
+              {
+                image: "transform4.png",
+                title: "Transparent, Consultative Approach"
+              },
+              {
+                image: "transform5.png",
+                title: "Strong Foundation In Custom Software Development"
+              },
+              {
+                image: "transform6.png",
+                title: "Commitment To Ethical And Sustainable AI"
+              }
+        ],
+        cta: {
+          title: (
+            <>
+              Ready To Explore <span className="font-bold">Possibilities?</span>
+            </>
+          ),
+          description: "Transform with Us — and let's build the future, step by step.",
+          buttonText: "Explore Our Services →",
+          buttonLink: "#" // Changed to '#' for example purposes
+        }
+      };
   return (
     <div>
         <Navbar/>
@@ -47,7 +82,11 @@ function page() {
             layout="left"
             showGlow={true}
             />
-        <TekMindzFeatures/>
+        <ReusableFeaturesSection
+        title={tekMindzData.title}
+        features={tekMindzData.features}
+        cta={tekMindzData.cta}
+      />
         <ContactForm/>
         <Footer/>
     </div>

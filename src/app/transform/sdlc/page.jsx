@@ -1,12 +1,11 @@
 'use client'
-
+import Navbar from '@/app/components/navbar'
 import React from 'react'
 // import SdlcBanner from '@/app/components/sdlcBanner'
 import ReusableBanner from '@/app/components/banner'
 import ContactForm from '@/app/components/connect'
 import Footer from '@/app/components/footer'
 import Sdlc from '@/app/components/sdlc'
-import Navbar from '@/app/components/transform_navbar'
 
 function page() {
   return (

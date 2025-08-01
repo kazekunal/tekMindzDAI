@@ -53,9 +53,9 @@ const SolutionsSection = () => {
               AI-powered solution for automated extraction, classification, and processing of information...
             </p>
             
-            <button className="border border-gray-300 text-gray-700 px-6 py-2 rounded-full hover:bg-[#98be2f] hover:text-white hover:border-[#98be2f] transition-all duration-300 flex items-center gap-2 text-sm font-medium" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+            {/* <button className="border border-gray-300 text-gray-700 px-6 py-2 rounded-full hover:bg-[#98be2f] hover:text-white hover:border-[#98be2f] transition-all duration-300 flex items-center gap-2 text-sm font-medium" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               Explore <ChevronRight size={14} />
-            </button>
+            </button> */}
           </div>
 
           {/* Predictive Maintenance Card */}
@@ -77,9 +77,9 @@ const SolutionsSection = () => {
               Machine learning solution that analyzes equipment data to predict failures before...
             </p>
             
-            <button className="border border-gray-300 text-gray-700 px-6 py-2 rounded-full hover:bg-[#98be2f] hover:text-white hover:border-[#98be2f] transition-all duration-300 flex items-center gap-2 text-sm font-medium" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+            {/* <button className="border border-gray-300 text-gray-700 px-6 py-2 rounded-full hover:bg-[#98be2f] hover:text-white hover:border-[#98be2f] transition-all duration-300 flex items-center gap-2 text-sm font-medium" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               Explore <ChevronRight size={14} />
-            </button>
+            </button> */}
           </div>
 
           {/* Customer Intelligence Platform Card */}
@@ -101,9 +101,9 @@ const SolutionsSection = () => {
               Integrated platform that leverages AI to understand customer behavior, predict...
             </p>
             
-            <button className="border border-gray-300 text-gray-700 px-6 py-2 rounded-full hover:bg-[#98be2f] hover:text-white hover:border-[#98be2f] transition-all duration-300 flex items-center gap-2 text-sm font-medium" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+            {/* <button className="border border-gray-300 text-gray-700 px-6 py-2 rounded-full hover:bg-[#98be2f] hover:text-white hover:border-[#98be2f] transition-all duration-300 flex items-center gap-2 text-sm font-medium" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               Explore <ChevronRight size={14} />
-            </button>
+            </button> */}
           </div>
 
           {/* Supply Chain Optimization Card */}
@@ -125,9 +125,9 @@ const SolutionsSection = () => {
               Advanced analytics solution that optimizes inventory levels, logistics operations...
             </p>
             
-            <button className="border border-gray-300 text-gray-700 px-6 py-2 rounded-full hover:bg-[#98be2f] hover:text-white hover:border-[#98be2f] transition-all duration-300 flex items-center gap-2 text-sm font-medium" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+            {/* <button className="border border-gray-300 text-gray-700 px-6 py-2 rounded-full hover:bg-[#98be2f] hover:text-white hover:border-[#98be2f] transition-all duration-300 flex items-center gap-2 text-sm font-medium" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               Explore <ChevronRight size={14} />
-            </button>
+            </button> */}
           </div>
 
           {/* Healthcare Analytics Suite Card */}
@@ -149,9 +149,9 @@ const SolutionsSection = () => {
               Specialized suite of analytics tools designed for healthcare providers to improve patient...
             </p>
             
-            <button className="border border-gray-300 text-gray-700 px-6 py-2 rounded-full hover:bg-[#98be2f] hover:text-white hover:border-[#98be2f] transition-all duration-300 flex items-center gap-2 text-sm font-medium" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+            {/* <button className="border border-gray-300 text-gray-700 px-6 py-2 rounded-full hover:bg-[#98be2f] hover:text-white hover:border-[#98be2f] transition-all duration-300 flex items-center gap-2 text-sm font-medium" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               Explore <ChevronRight size={14} />
-            </button>
+            </button> */}
           </div>
 
           {/* Financial Risk Intelligence Card */}
@@ -173,9 +173,9 @@ const SolutionsSection = () => {
               AI-driven solution that analyzes financial data to identify risks, detect fraud patterns...
             </p>
             
-            <button className="border border-gray-300 text-gray-700 px-6 py-2 rounded-full hover:bg-[#98be2f] hover:text-white hover:border-[#98be2f] transition-all duration-300 flex items-center gap-2 text-sm font-medium" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+            {/* <button className="border border-gray-300 text-gray-700 px-6 py-2 rounded-full hover:bg-[#98be2f] hover:text-white hover:border-[#98be2f] transition-all duration-300 flex items-center gap-2 text-sm font-medium" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               Explore <ChevronRight size={14} />
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

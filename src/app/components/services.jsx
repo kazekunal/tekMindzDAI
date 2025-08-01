@@ -102,7 +102,7 @@
 
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
-
+import Link from 'next/link';
 
 const ServicesSection = ({ title, services }) => {
   return (
@@ -137,10 +137,11 @@ const ServicesSection = ({ title, services }) => {
               <p className="text-gray-300 text-base leading-relaxed mb-8">
                 {service.description}
               </p>
-              
+              <Link href={service.link}>
               <button className="border border-[#98be2f] text-[#98be2f] px-6 py-3 rounded-full hover:bg-[#98be2f] hover:text-blue-900 transition-all duration-300 flex items-center gap-2 font-medium">
                 Explore <ChevronRight size={16} />
               </button>
+              </Link>
             </div>
           ))}
         </div>

@@ -256,7 +256,8 @@ const CaseStudiesSection = ({ title, caseStudySets = [] }) => {
                       {study.challenge && (<div className="mb-4"><h4 className="text-sm font-medium text-white mb-2" style={{ fontFamily: 'Roboto, sans-serif' }}>Challenge / Requirement:</h4><p className="text-gray-300 text-m leading-relaxed" style={{ fontFamily: 'Roboto, sans-serif' }}>{study.challenge}</p></div>)}
                       {study.description && (<div className="mb-4"><p className="text-gray-300 text-xs leading-relaxed" style={{ fontFamily: 'Roboto, sans-serif' }}>{study.description}</p></div>)}
                       {study.solution && (<div className="mb-6"><h4 className="text-sm font-medium text-white mb-2" style={{ fontFamily: 'Roboto, sans-serif' }}>Our Solution:</h4><p className="text-gray-300 text-xs leading-relaxed" style={{ fontFamily: 'Roboto, sans-serif' }}>{study.solution}</p></div>)}
-                      <div className="mt-auto"><button className="border border-[#98be2f] text-[#98be2f] inline-flex items-center gap-2 px-4 py-2 rounded-full hover:bg-[#98be2f] hover:text-slate-900 cursor-pointer transition-all duration-300 text-sm font-medium" style={{ fontFamily: 'Roboto, sans-serif' }}>Explore <ChevronRight size={14} /></button></div>
+                      {/* here the link is disabled until we create the other pages */}
+                      {/* <div className="mt-auto"><button className="border border-[#98be2f] text-[#98be2f] inline-flex items-center gap-2 px-4 py-2 rounded-full hover:bg-[#98be2f] hover:text-slate-900 cursor-pointer transition-all duration-300 text-sm font-medium" style={{ fontFamily: 'Roboto, sans-serif' }}>Explore <ChevronRight size={14} /></button></div> */}
                     </div>
                   </div>
                 ))}

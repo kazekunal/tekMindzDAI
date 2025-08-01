@@ -72,7 +72,7 @@ const VisionSection = () => {
                 </p>
               </div>
 
-              <div className="pt-4">
+              {/* <div className="pt-4">
                 <button className="group bg-white border-2 border-gray-300 text-gray-700 hover:border-purple-400 hover:text-purple-600 px-8 py-3 rounded-full text-sm font-medium transition-all duration-300 flex items-center space-x-2 shadow-sm hover:shadow-md roboto">
                   <span>Know More</span>
                   <svg 
@@ -84,7 +84,7 @@ const VisionSection = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

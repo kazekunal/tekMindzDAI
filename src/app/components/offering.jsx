@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import { ChevronLeft, ChevronRight, RotateCcw, Zap, TrendingUp } from 'lucide-react';
+import Link from 'next/link';
 
 const OfferingsSection = () => {
   return (
@@ -55,10 +56,10 @@ const OfferingsSection = () => {
               <p className="text-gray-300 text-base leading-relaxed mb-8 roboto">
                 Cutting-edge generative AI solutions that create new content, designs, and insights from existing data. Our generative AI offerings include large language models, content generation platforms, synthetic data creation, creative design tools, and powered innovation frameworks.
               </p>
-              
+              <Link href="/generative-ai">
               <button className="border border-[#98be2f] text-[#98be2f] px-6 py-3 rounded-full hover:bg-[#98be2f] hover:text-blue-900 transition-all duration-300 flex items-center gap-2 font-medium">
                 Learn More <ChevronRight size={16} />
-              </button>
+              </button></Link>
             </div>
 
             {/* Agentic AI Card */}
@@ -72,10 +73,10 @@ const OfferingsSection = () => {
               <p className="text-gray-300 text-base leading-relaxed mb-8 roboto">
                 Enterprise-grade artificial intelligence solutions that automate complex processes, enhance decision-making, and drive business growth. We offer custom AI model development, AI integration services, computer vision systems, natural language processing, and AI strategy consulting.
               </p>
-              
+              <Link href="/agentic-ai">
               <button className="border border-[#98be2f] text-[#98be2f] px-6 py-3 rounded-full hover:bg-[#98be2f] hover:text-blue-900 transition-all duration-300 flex items-center gap-2 font-medium">
                 Learn More <ChevronRight size={16} />
-              </button>
+              </button></Link>
             </div>
 
             {/* Data Analytics Card */}
@@ -89,10 +90,11 @@ const OfferingsSection = () => {
               <p className="text-gray-300 text-base leading-relaxed mb-8 roboto">
                 Comprehensive data analytics solutions that help organizations extract valuable insights from complex datasets. Our offerings include predictive analytics, data visualization, business intelligence, and custom analytics dashboards tailored to your specific industry needs.
               </p>
-              
+              <Link href="/data-analytics">
               <button className="border border-[#98be2f] text-[#98be2f] px-6 py-3 rounded-full hover:bg-[#98be2f] hover:text-blue-900 transition-all duration-300 flex items-center gap-2 font-medium ">
                 Learn More <ChevronRight size={16} />
               </button>
+              </Link>
             </div>
           </div>
         </div>

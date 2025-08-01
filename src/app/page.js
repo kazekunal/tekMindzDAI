@@ -19,17 +19,20 @@ export default function Home() {
     {
       image: "/tek1.png",
       title: "AI & Machine Learning Services",
-      description: "Build intelligent solutions with practical AI applications, driving innovation and efficiency across your business operations."
+      description: "Build intelligent solutions with practical AI applications, driving innovation and efficiency across your business operations.",
+      link: "/transform/services"
     },
     {
       image: "/tek2.png",
       title: "Data Engineering & Analytics",
-      description: "Transform your raw data into actionable intelligence with robust data engineering and advanced analytics."
+      description: "Transform your raw data into actionable intelligence with robust data engineering and advanced analytics.",
+      link: "/transform/services"
     },
     {
       image: "/tek3.png",
       title: "Platform Development",
-      description: "Building scalable, intelligent, & AI-first platforms to power your digital future and accelerate growth."
+      description: "Building scalable, intelligent, & AI-first platforms to power your digital future and accelerate growth.",
+      link: "/transform/services"
     }
   ];
 
