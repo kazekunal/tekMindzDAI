@@ -103,7 +103,7 @@ export default function ContactForm() {
                 <p className="text-blue-200 text-sm md:text-base">talk@tekailabs.ai</p>
               </div>
             </div>
-            
+
             <div className="flex items-start space-x-4 md:space-x-6">
               <div className="w-12 h-12 md:w-16 md:h-16 bg-blue-700 bg-opacity-30 rounded-xl flex items-center justify-center border border-blue-600 border-opacity-30 flex-shrink-0 mt-1">
                 <MapPin className="w-5 h-5 md:w-6 md:h-6 text-[#98be2f]" />
@@ -111,7 +111,7 @@ export default function ContactForm() {
               <div>
                 <h3 className="text-white text-lg md:text-xl font-semibold mb-1">India Operations</h3>
                 <p className="text-blue-200 text-xs md:text-sm leading-relaxed">
-                  Samin TekMindz India Pvt. Ltd.<br />
+                  TekAILabs<br />
                   Unit No. 2, Second Floor, NPX Tower, Sector 153,<br />
                   Noida – 201310 (U.P.)
                 </p>
