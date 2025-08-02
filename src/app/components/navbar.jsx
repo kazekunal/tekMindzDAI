@@ -13,7 +13,7 @@ const Navbar = ({ activeLink: propActiveLink = null }) => {
     'Solutions',
     'Services',
     'Case-Studies',
-    'Leadership',
+    'Innovation',
     'AI-Learning'
   ];
 
@@ -50,7 +50,7 @@ const Navbar = ({ activeLink: propActiveLink = null }) => {
     scrollToSection(sectionId);
   };
 
-  // Optional: Update active link based on scroll position (only if no prop is provided)
+  // Update active link based on scroll position (only if no prop is provided)
   useEffect(() => {
     if (propActiveLink) return; // Don't run scroll detection if prop is provided
 
@@ -58,7 +58,18 @@ const Navbar = ({ activeLink: propActiveLink = null }) => {
       const navbarHeight = 64;
       const scrollPosition = window.scrollY + navbarHeight + 50; // Add some offset for better detection
 
-      navLinks.forEach((link) => {
+      // Create a copy of navLinks to avoid dependency issues
+      const linksToCheck = [
+        'Overview',
+        'Offerings',
+        'Solutions',
+        'Services',
+        'Case-Studies',
+        'Innovation',
+        'AI-Learning'
+      ];
+
+      linksToCheck.forEach((link) => {
         const sectionId = link.toLowerCase().replace(/\s+/g, '-');
         const element = document.getElementById(sectionId);
         
@@ -75,7 +86,7 @@ const Navbar = ({ activeLink: propActiveLink = null }) => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [navLinks, propActiveLink]);
+  }, [propActiveLink]); // Removed navLinks dependency to avoid re-running effect
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);

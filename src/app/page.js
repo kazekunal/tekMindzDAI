@@ -5,6 +5,7 @@ import CaseStudiesSection from "./components/case";
 import ContactForm from "./components/connect";
 import Footer from "./components/footer";
 import HeroSection from "./components/hero";
+import AIInnovationPartners from "./components/innovation";
 import InsightsSection from "./components/insights";
 import Leadership from "./components/leader";
 import Navbar from "./components/navbar";
@@ -60,7 +61,8 @@ export default function Home() {
       <ServicesSection title="Services" services={servicesData} />
       {/* <InsightsSection/> */}
       <CaseStudiesSection title="Case Studies" caseStudySets={caseStudiesData} />
-      <Leadership/>
+      <AIInnovationPartners/>
+      {/* <Leadership/> */}
       <AILearning/>
       <ContactForm/>
       <Footer/>

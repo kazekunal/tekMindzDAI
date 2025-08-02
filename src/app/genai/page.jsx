@@ -72,9 +72,7 @@ function page() {
                 main: "What is",
                 highlight: "Generative AI?"
             }}
-            description="Generative AI refers to artificial intelligence systems that can create new content, including text, images, code, and more. Unlike traditional AI that focuses on analysis and prediction, generative AI can produce entirely new outputs based on patterns learned from training data.
-
-            Our comprehensive generative AI solutions help enterprises implement these technologies effectively, securely, and at scale."
+            description="Generative AI refers to artificial intelligence systems that can create new content, including text, images, code, and more. Unlike traditional AI that focuses on analysis and prediction, generative AI can produce entirely new outputs based on patterns learned from training data. Our comprehensive generative AI solutions help enterprises implement these technologies effectively, securely, and at scale."
             image={{
                 src: "/genai2.png",
                 alt: "AI Transform Visualization"
