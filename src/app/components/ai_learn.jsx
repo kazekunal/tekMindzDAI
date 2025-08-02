@@ -62,7 +62,7 @@ const AILearning = () => {
                 <div className="pt-4">
                   <Link href="/AI-Learn" className="inline-block">
                     <button className="group transform-button bg-transparent border-2 border-[#ffffff]/50 text-[#96BB2F] hover:bg-[#96BB2F] hover:text-slate-800 hover:border-[#96BB2F] px-8 py-3 rounded-full text-sm font-medium transition-all duration-500 flex items-center space-x-2 Roboto hover:shadow-lg hover:shadow-[#96BB2F]/20 hover:scale-105 active:scale-95 hover:cursor-pointer" >
-                      <span className='font-bold transition-all duration-300'>Start Learning Today</span>
+                      <span className='font-bold transition-all duration-300'>TekAi Labs</span>
                       <svg 
                         className="w-4 h-4 transition-all duration-300 group-hover:translate-x-1 group-hover:scale-110" 
                         fill="none" 
