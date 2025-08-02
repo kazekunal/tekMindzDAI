@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../components/transform_navbar'
+import Navbar from '../components/navbar'
 import HeroSection from '../components/transform_hero'
 import ContactForm from '../components/connect'
 import FitSection from '../components/transform_fit'
@@ -91,7 +91,7 @@ function page() {
       };
   return (
     <div>
-        <Navbar/>
+        <Navbar activeLink="Offerings"/>
         <HeroSection
             title={{
                 main: "Empowering Autonomy: ",

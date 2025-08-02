@@ -4,7 +4,7 @@ import ContactForm from '../components/connect'
 import Footer from '../components/footer'
 import FitSection from '../components/transform_fit'
 import HeroSection from '../components/transform_hero'
-import Navbar from '../components/transform_navbar'
+import Navbar from '../components/navbar'
 import SolutionsSection from '../components/transform_sol'
 import ReusableFeaturesSection from '../components/transform_why'
 

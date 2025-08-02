@@ -9,7 +9,7 @@ import Navbar from '../components/navbar'
 function page() {
   return (
     <div>
-        <Navbar/>
+        <Navbar activeLink="Case-Studies" />
         <ReusableBanner
   firstBreadcrumb={{ label: "Home", href: "/" }}
   secondBreadcrumb={{ label: "Case Studies", href: null }}

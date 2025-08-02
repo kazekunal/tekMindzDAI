@@ -1,5 +1,6 @@
 'use client'
 import React from 'react';
+import Link from 'next/link';
 
 const AILearning = () => {
   const features = [
@@ -20,6 +21,8 @@ const AILearning = () => {
       title: "Community",
     }
   ];
+
+
 
   return (
     <>
@@ -51,12 +54,26 @@ const AILearning = () => {
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
                   Expand Your AI Knowledge
                 </h2>
-                <p className="text-gray-300 text-lg leading-relaxed" style={{ fontFamily: 'Roboto, sans-serif' }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis 
-                  venenatis risus. Donec arcu dolor, faucibus et interdum quis, efficitur vel odio. 
-                  Nunc felis turpis, porta eu imperdiet et, gravida eget erat. Duis id auctor enim, vel 
-                  blandit libero. Cras et augue placerat, congue tellus ac, cursus sapien.
+                <p className="text-gray-300 text-lg leading-relaxed mb-8" style={{ fontFamily: 'Roboto, sans-serif' }}>
+                Empower your teams to use AI in everyday work. TekAILabs offers hands-on training, webinars, and guided programs to help employees—including in govt departments—automate tasks, enhance workflows, and apply AI confidently using LLMs, RAG, and agent-based systems.
                 </p>
+                
+                {/* Call to Action Button */}
+                <div className="pt-4">
+                  <Link href="/AI-Learn" className="inline-block">
+                    <button className="group transform-button bg-transparent border-2 border-[#ffffff]/50 text-[#96BB2F] hover:bg-[#96BB2F] hover:text-slate-800 hover:border-[#96BB2F] px-8 py-3 rounded-full text-sm font-medium transition-all duration-500 flex items-center space-x-2 Roboto hover:shadow-lg hover:shadow-[#96BB2F]/20 hover:scale-105 active:scale-95 hover:cursor-pointer" >
+                      <span className='font-bold transition-all duration-300'>Start Learning Today</span>
+                      <svg 
+                        className="w-4 h-4 transition-all duration-300 group-hover:translate-x-1 group-hover:scale-110" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </button>
+                  </Link>
+                </div>
               </div>
 
               {/* Feature grid */}

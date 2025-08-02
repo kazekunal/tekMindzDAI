@@ -106,7 +106,7 @@ import Link from 'next/link';
 
 const ServicesSection = ({ title, services }) => {
   return (
-    <div className="px-6 py-16 relative overflow-hidden font-sans" style={{background: 'linear-gradient(to bottom right, #00386C, #020C15)'}}>
+    <div id="services" className="px-6 py-16 relative overflow-hidden font-sans" style={{background: 'linear-gradient(to bottom right, #00386C, #020C15)'}}>
       {/* Background decorative element */}
       <div className="absolute top-28 right-1/2 w-20 h-20 bg-purple-500 rounded-full opacity-30 blur-2xl"></div>
       

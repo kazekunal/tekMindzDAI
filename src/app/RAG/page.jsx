@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import Navbar from '../components/transform_navbar'
+import Navbar from '../components/navbar'
 import ReusableBanner from '@/app/components/banner'
 import FitSection from '@/app/components/transform_fit'
 import TrendsSection from '../components/trendsRag'
@@ -142,7 +142,7 @@ function page() {
   return (
     <div>
         <div>
-        <Navbar/>
+        <Navbar activeLink="Offerings"/>
         <ReusableBanner
               firstBreadcrumb={{ label: "Home", href: "/" }}
               secondBreadcrumb={{ label: "RAG", href: null }}

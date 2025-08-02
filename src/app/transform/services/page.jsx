@@ -12,7 +12,7 @@ import PlatformDevelopment from '@/app/components/platformDev'
 function page() {
   return (
     <div>
-        <Navbar/>
+       <Navbar activeLink="Services" />
         <HeroSection
             title={{
                 main: "Your Strategic Partner for",

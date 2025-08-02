@@ -1,7 +1,7 @@
 
 
 import React from 'react'
-import Navbar from '../components/transform_navbar'
+import Navbar from '../components/navbar'
 import HeroSection from '../components/transform_hero'
 import FitSection from '@/app/components/transform_fit'
 import ContactForm from '../components/connect'
@@ -83,7 +83,7 @@ function page() {
   return (
     <div>
         <div>
-        <Navbar/>
+        <Navbar activeLink="Offerings"/>
         <HeroSection
             title={{
                 main: "Transform Data into Decisions - ",

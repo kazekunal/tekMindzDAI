@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import HeroSection from '@/app/components/transform_hero'
-import Navbar from '@/app/components/transform_navbar'
+import Navbar from '../components/navbar'
 import FitSection from '@/app/components/transform_fit'
 import ServicesSection from '@/app/components/services'
 import CaseStudiesSection from '@/app/components/case'
@@ -46,7 +46,7 @@ function page() {
 
   return (
     <div>
-        <Navbar/>
+        <Navbar activeLink="Offerings"/>
         <HeroSection
             title={{
                 main: "Transform Your",

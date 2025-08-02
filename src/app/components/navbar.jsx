@@ -3,18 +3,26 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
 
-const Navbar = () => {
-  const [activeLink, setActiveLink] = useState('Overview');
+const Navbar = ({ activeLink: propActiveLink = null }) => {
+  const [activeLink, setActiveLink] = useState(propActiveLink || 'Overview');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navLinks = [
     'Overview',
     'Offerings',
     'Solutions',
+    'Services',
     'Case-Studies',
     'Leadership',
     'AI-Learning'
   ];
+
+  // Update activeLink when prop changes
+  useEffect(() => {
+    if (propActiveLink) {
+      setActiveLink(propActiveLink);
+    }
+  }, [propActiveLink]);
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -31,7 +39,10 @@ const Navbar = () => {
   };
 
   const handleLinkClick = (link) => {
-    setActiveLink(link);
+    // Only update activeLink if no prop is provided (home page behavior)
+    if (!propActiveLink) {
+      setActiveLink(link);
+    }
     setIsMobileMenuOpen(false);
     
     // Convert link text to ID format (lowercase, spaces to hyphens if needed)
@@ -39,8 +50,10 @@ const Navbar = () => {
     scrollToSection(sectionId);
   };
 
-  // Optional: Update active link based on scroll position
+  // Optional: Update active link based on scroll position (only if no prop is provided)
   useEffect(() => {
+    if (propActiveLink) return; // Don't run scroll detection if prop is provided
+
     const handleScroll = () => {
       const navbarHeight = 64;
       const scrollPosition = window.scrollY + navbarHeight + 50; // Add some offset for better detection
@@ -62,7 +75,7 @@ const Navbar = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [navLinks]);
+  }, [navLinks, propActiveLink]);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);

@@ -83,7 +83,7 @@ function page() {
 
   return (
     <div>
-        <Navbar/>
+        <Navbar activeLink="Offerings"/>
         <HeroSection
             title={{
                 main: "Transforming AI Innovation Into Enterprise Value",
@@ -106,9 +106,9 @@ function page() {
             <FitSection
             title={{
                 main: "About Our",
-                highlight: "AI-ML Labs"
+                highlight: "AI-ML Practice"
             }}
-            description="At TekMinds AI-ML Labs, we're pioneering the future of intelligent automation through our comprehensive machine learning platform. Our labs focus on developing tailored ML solutions that empower both data scientists and business professionals to build sophisticated models without writing a single line of code."
+            description="At TekMindz, we specialize in crafting custom data analytics solutions that leverage cutting-edge AI, machine learning, and GenAI technologies. As we embark on our journey into AI and Data Analytics, we bring a fresh perspective combined with deep technological expertise to help you harness your data’s full potential. Our approach is grounded in industry best practices, ensuring data quality, security, and scalability while delivering actionable insights that drive real business outcomes."
             image={{
                 src: "/data2.png",
                 alt: "AI Transform Visualization"
