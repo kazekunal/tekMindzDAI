@@ -140,12 +140,11 @@ function page() {
                 main: "MCP ",
                 highlight: "(Modular Cognitive Pipelines)"
             }}
-            description="Modular Cognitive Pipelines (MCP) are structured pipelines that break down complex agent behavior into manageable, reusable modules."
+            description = "Model Context Protocol (MCP) is a foundational framework for building interoperable, context-aware AI agents. It enables structured communication between models, tools, memory, and environments, allowing agents to reason, plan, and act more effectively across diverse tasks."
             bulletPoints={[
-                "Cognitive Segmentation: Each pipeline module handles a distinct cognitive task (e.g., data ingestion, reasoning, retrieval, decision).",
-                "Parallel & Sequential Pipelines: Tasks can be parallelized or chained for optimal speed and accuracy.",
-                "Plug-and-Play Modules: LLMs, RAG components, and third-party APIs can be injected or replaced independently.",
-                "Governed Pipelines: Enables audit, compliance, and fine-tuning for regulated industries."
+                "Standardized Context Handling: Ensures agents consistently manage and exchange memory, goals, and observations.",
+                "Interoperability by Design: Plug into any LLM, tool, or framework that supports MCP with minimal effort.",
+                "Composable Agents: Define agents as dynamic systems of modular, context-aware components.",
             ]}
             image={{
                 src: "/ai2.png",

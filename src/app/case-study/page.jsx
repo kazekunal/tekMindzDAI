@@ -11,11 +11,11 @@ function page() {
     <div>
         <Navbar/>
         <ReusableBanner
-    breadcrumb="Overview / Case Studies"
-    titleMain="Case"
-    titleHighlight="Studies"
-    description="From predictive healthcare to intelligent automation, our case studies showcase measurable impact.
-    Explore practical applications that drive innovation and efficiency."
+  firstBreadcrumb={{ label: "Home", href: "/" }}
+  secondBreadcrumb={{ label: "Case Studies", href: null }}
+  titleMain="Case"
+  titleHighlight="Studies"
+  description="From predictive healthcare to intelligent automation, our case studies showcase measurable impact. Explore practical applications that drive innovation and efficiency."
 />
 <CaseStudySection
   title="Case Studies Of"

@@ -1,7 +1,9 @@
 import React from "react";
+import Link from "next/link";
 
 const ReusableBanner = ({ 
-  breadcrumb,
+  firstBreadcrumb = { label: "Home", href: "/" },
+  secondBreadcrumb = { label: "Current Page", href: null }, // null href means it's the active page
   titleMain, 
   titleHighlight, 
   description, 
@@ -26,13 +28,36 @@ const ReusableBanner = ({
         </div>
 
         {/* Breadcrumb */}
-        {breadcrumb && (
-          <div className="relative z-10 pt-6 px-6 max-w-7xl mx-auto">
-            <div className="text-gray-300 text-sm" style={{ fontFamily: 'Roboto, sans-serif' }}>
-              {breadcrumb}
-            </div>
+        <div className="relative z-50 pt-6 px-6 max-w-7xl mx-auto">
+          <div className="text-gray-300 text-sm flex items-center space-x-2" style={{ fontFamily: 'Roboto, sans-serif' }}>
+            {/* First Breadcrumb Link */}
+            {firstBreadcrumb.href ? (
+              <Link 
+                href={firstBreadcrumb.href} 
+                className="text-gray-300 hover:text-white transition-colors duration-200 relative z-50"
+              >
+                {firstBreadcrumb.label}
+              </Link>
+            ) : (
+              <span className="text-gray-300">{firstBreadcrumb.label}</span>
+            )}
+            
+            {/* Separator */}
+            <span className="text-gray-500">{'>'}</span>
+            
+            {/* Second Breadcrumb Link or Active Page */}
+            {secondBreadcrumb.href ? (
+              <Link 
+                href={secondBreadcrumb.href} 
+                className="text-gray-300 hover:text-white transition-colors duration-200 relative z-50"
+              >
+                {secondBreadcrumb.label}
+              </Link>
+            ) : (
+              <span className="text-white font-medium">{secondBreadcrumb.label}</span>
+            )}
           </div>
-        )}
+        </div>
 
         {/* Main content */}
         <div className="relative z-10 text-center py-16 px-6">

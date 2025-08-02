@@ -34,7 +34,7 @@ const OfferingsSection = () => {
       icon: "/offer2.png",
       title: "AI/ML",
       description: "TekMindz provides AI consulting and machine learning strategy services through comprehensive AI assessments, ML roadmaps, and data scie consulting that deliver measurable AI transformation ROI.",
-      link: ""
+      link: "/AI-ML"
     }
   ];
 

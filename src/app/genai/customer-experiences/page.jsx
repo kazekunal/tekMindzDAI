@@ -18,14 +18,15 @@ function page() {
     <div>
         <Navbar/>
         <ReusableBanner
-            breadcrumb="Generative AI / Services"
-            titleMain="Customer"
-            titleHighlight="Experience"
-            description="Enhance your customer interactions with AI-powered solutions that personalize experiences, improve support efficiency, and drive deeper customer engagement and satisfaction."
-            tabs={tabs}
-            activeTab={activeTab}
-            setActiveTab={setActiveTab}
-        />
+          firstBreadcrumb={{ label: "Generative AI", href: "/generative-ai" }}
+          secondBreadcrumb={{ label: "Services", href: null }}
+          titleMain="Customer"
+          titleHighlight="Experience"
+          description="Enhance your customer interactions with AI-powered solutions that personalize experiences, improve support efficiency, and drive deeper customer engagement and satisfaction."
+          tabs={tabs}
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+/>
         {activeTab === 'genai' ? <TekMindzGenAIServices /> : <UseCasesComponent />}
         <ContactForm/>
         <Footer/>

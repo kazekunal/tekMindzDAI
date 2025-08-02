@@ -19,7 +19,8 @@ function page() {
     <div>
         <Navbar/>
         <ReusableBanner
-            breadcrumb="Generative AI / Services"
+              firstBreadcrumb={{ label: "Generative AI", href: "/generative-ai" }}
+              secondBreadcrumb={{ label: "Services", href: null }}
             titleMain="Enterprise Knowledge"
             titleHighlight="Management"
             description="Transform how your organization captures, organizes, and leverages knowledge with our AI-driven 

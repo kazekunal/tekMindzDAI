@@ -144,7 +144,8 @@ function page() {
         <div>
         <Navbar/>
         <ReusableBanner
-            breadcrumb="Generative AI / RAG"
+              firstBreadcrumb={{ label: "Home", href: "/" }}
+              secondBreadcrumb={{ label: "RAG", href: null }}
             titleMain="RAG: Retrieval Meets Generation "
             titleHighlight="A smarter Approach"
             description="Bridge the gap between static LLMs and dynamic enterprise knowledge"
