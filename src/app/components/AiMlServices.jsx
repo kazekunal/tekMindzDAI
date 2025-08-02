@@ -70,7 +70,7 @@ const AIMLServicesPage = () => {
               {/* Icon */}
               <div className="flex-shrink-0 mt-1">
                 <img 
-                  src="/union.png" 
+                  src="/icon1.png" 
                   alt="Service icon" 
                   className="w-6 h-6"
                   onError={(e) => {

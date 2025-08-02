@@ -42,7 +42,7 @@ const AIInnovationPartners = () => {
       
       {/* Header Section */}
       <div className="max-w-7xl mx-auto mb-16">
-        <div className="text-left mb-12">
+        <div className="text-center mb-12">
           <h1 className="text-3xl font-bold mb-8">
             <span className="text-white">Tek</span>
             <span className="text-green-400">AI</span>
