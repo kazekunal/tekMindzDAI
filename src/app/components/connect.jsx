@@ -103,8 +103,7 @@ export default function ContactForm() {
                 <p className="text-blue-200 text-sm md:text-base">talk@tekailabs.ai</p>
               </div>
             </div>
-
-            {/* India Operations */}
+            
             <div className="flex items-start space-x-4 md:space-x-6">
               <div className="w-12 h-12 md:w-16 md:h-16 bg-blue-700 bg-opacity-30 rounded-xl flex items-center justify-center border border-blue-600 border-opacity-30 flex-shrink-0 mt-1">
                 <MapPin className="w-5 h-5 md:w-6 md:h-6 text-[#98be2f]" />
