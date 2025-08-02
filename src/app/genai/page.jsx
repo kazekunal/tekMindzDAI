@@ -61,7 +61,7 @@ function page() {
             }}
             breadcrumb={{
                 items: [
-                { label: "home", href: "/home" },
+                { label: "home", href: "/" },
                 { label: "genai", href: "/genai", isActive: true }
                 ]
             }}
