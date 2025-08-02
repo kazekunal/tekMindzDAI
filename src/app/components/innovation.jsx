@@ -83,20 +83,6 @@ const AIInnovationPartners = () => {
           ))}
         </div>
       </div>
-      
-      {/* Navigation Arrow */}
-      <div className="absolute right-8 top-1/2 transform -translate-y-1/2">
-        <button className="w-12 h-12 bg-slate-600/50 hover:bg-green-400/20 rounded-full flex items-center justify-center border border-slate-500/50 hover:border-green-400/50 transition-all duration-300">
-          <svg 
-            className="w-6 h-6 text-gray-400 hover:text-green-400 transition-colors" 
-            fill="none" 
-            stroke="currentColor" 
-            viewBox="0 0 24 24"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
-      </div>
     </div>
   );
 };
