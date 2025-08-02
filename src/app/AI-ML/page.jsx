@@ -7,9 +7,9 @@ import FitSection from '../components/transform_fit'
 import Footer from '../components/footer'
 import ReusableFeaturesSection from '../components/transform_why'
 import CaseStudiesSection from '../components/case'
-import InsightsSection from '../components/insights'
 import AcceleratorsSection from '../components/accelerator'
 import DataAnalyticsService from '../components/dataAnalyticsServices'
+import AIMLServicesPage from '../components/AiMlServices'
 
 
 
@@ -58,7 +58,7 @@ function page() {
       const tekMindzData = {
         title: (
           <p className='text-4xl'>
-          Why Choose <span className="font-bold text-gray-900">TekMindz</span> for Your <br/> <span className="font-bold text-gray-900">Data Analytics  </span>Journey?
+          Why Choose <span className="font-bold text-gray-900">TekMindz</span> for Your <br/> <span className="font-bold text-gray-900">AI/ML</span> Journey?
             </p>
         ),
         features: [
@@ -108,7 +108,9 @@ function page() {
                 main: "About Our",
                 highlight: "AI-ML Practice"
             }}
-            description="At TekMindz, we specialize in crafting custom data analytics solutions that leverage cutting-edge AI, machine learning, and GenAI technologies. As we embark on our journey into AI and Data Analytics, we bring a fresh perspective combined with deep technological expertise to help you harness your data’s full potential. Our approach is grounded in industry best practices, ensuring data quality, security, and scalability while delivering actionable insights that drive real business outcomes."
+            description="At TekAiLabs, our AI/ML practice focuses on building production-grade models for predictive analytics, computer vision, NLP, and optimization.
+
+            We specialize in end-to-end model lifecycle management, MLOps, and scalable ML pipelines. By combining statistical learning, deep learning, and reinforcement learning, we deliver robust, explainable, and enterprise-ready AI solutions."
             image={{
                 src: "/data2.png",
                 alt: "AI Transform Visualization"
@@ -118,10 +120,9 @@ function page() {
             showGlow={true}
 
             />
-            <DataAnalyticsService/>
+            <AIMLServicesPage/>
             <AcceleratorsSection title="Accelerators" cards={acceleratorsData}/>
             <CaseStudiesSection title="Case Studies" caseStudySets={caseStudiesData} />
-            <InsightsSection/>
             <ReusableFeaturesSection
         title={tekMindzData.title}
         features={tekMindzData.features}
