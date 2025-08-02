@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState('Overview');
@@ -116,9 +117,11 @@ const Navbar = () => {
 
           {/* Contact Us Button - Desktop */}
           <div className="hidden md:block">
+            <Link href="#contact">
             <button className="bg-transparent border-2 border-[#ffffff]/50 text-[#97bb2e] hover:bg-[#97bb2e] hover:text-slate-800 px-6 py-2 rounded-full text-sm font-medium transition-all duration-200">
               Contact Us
             </button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}

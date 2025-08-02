@@ -65,7 +65,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row">
+    <div id='contact' className="min-h-screen flex flex-col lg:flex-row">
       {/* Left Section - Get In Touch */}
       <div className="w-full lg:w-1/2 relative overflow-hidden" style={{background: 'linear-gradient(to bottom right, #00386C, #020C15)'}}>
         {/* Background decorative elements */}
