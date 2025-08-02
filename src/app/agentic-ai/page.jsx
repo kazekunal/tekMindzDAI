@@ -140,7 +140,7 @@ function page() {
                 main: "MCP ",
                 highlight: "(Modular Cognitive Pipelines)"
             }}
-            description = "Model Context Protocol (MCP) is a foundational framework for building interoperable, context-aware AI agents. It enables structured communication between models, tools, memory, and environments, allowing agents to reason, plan, and act more effectively across diverse tasks."
+            description = "Model Context Protocol (MCP) is a foundational framework for building interoperable, context-aware AI agents. It enables structured communication between models, tools, memory, and environments, allowing agents to reason, plan, and act more effectively across diverse tasks. At TekAILabs, we leverage MCP to craft flexible, goal-driven agents tailored to your workflows—enhancing reliability, adaptability, and real-world performance."
             bulletPoints={[
                 "Standardized Context Handling: Ensures agents consistently manage and exchange memory, goals, and observations.",
                 "Interoperability by Design: Plug into any LLM, tool, or framework that supports MCP with minimal effort.",
