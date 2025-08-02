@@ -72,7 +72,9 @@ function page() {
                 main: "Unlock Business Innovation with ",
                 highlight: "Responsible Generative AI"
             }}
-            description="Generative AI refers to artificial intelligence systems that can create new content, including text, images, code, and more. Unlike traditional AI that focuses on analysis and prediction, generative AI can produce entirely new outputs based on patterns learned from training data. Our comprehensive generative AI solutions help enterprises implement these technologies effectively, securely, and at scale."
+            description="At TekAILabs, we don't just build Generative AI solutions — we build them responsibly, with trust and transparency at the core. Our mission is to empower organizations to solve real-world problems using AI that is not only powerful, but accountable, ethical, and aligned with your values.
+
+            From intelligent copilots and content generation to automated workflows and knowledge extraction, we tailor GenAI applications that are secure, explainable, and human-centric."
             image={{
                 src: "/genai2.png",
                 alt: "AI Transform Visualization"
