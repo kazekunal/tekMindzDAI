@@ -58,7 +58,7 @@ export default function Home() {
       <OfferingsSection/>
       <SolutionsSection/>
       <ServicesSection title="Services" services={servicesData} />
-      <InsightsSection/>
+      {/* <InsightsSection/> */}
       <CaseStudiesSection title="Case Studies" caseStudySets={caseStudiesData} />
       <Leadership/>
       <AILearning/>

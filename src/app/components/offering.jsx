@@ -25,7 +25,7 @@ const OfferingsSection = () => {
       link: "/data-analytics"
     },
     {
-      icon: "/offer4.png",
+      icon: "/offer1.png",
       title: "RAG",
       description: "Transform your AI's capabilities with Retrieval-Augmented Generation (RAG). This advanced technique empowers Large Language Models by fetching real-time, factual information from your specific knowledge bases before answering a query.",
       link: "/RAG"

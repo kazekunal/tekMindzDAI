@@ -11,7 +11,6 @@ const Navbar = () => {
     'Overview',
     'Offerings',
     'Solutions',
-    'Insights',
     'Case-Studies',
     'Leadership',
     'AI-Learning'
@@ -74,6 +73,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
+          <Link href="/">
           <div className="flex-shrink-0">
             <img 
               src="/title.png" 
@@ -92,6 +92,7 @@ const Navbar = () => {
               Tek<span className="text-[#97bb2e]">MindzDAI</span>
             </span>
           </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
