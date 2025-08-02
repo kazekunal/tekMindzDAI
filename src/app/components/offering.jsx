@@ -29,6 +29,12 @@ const OfferingsSection = () => {
       title: "RAG",
       description: "Transform your AI's capabilities with Retrieval-Augmented Generation (RAG). This advanced technique empowers Large Language Models by fetching real-time, factual information from your specific knowledge bases before answering a query.",
       link: "/RAG"
+    },
+    {
+      icon: "/offer2.png",
+      title: "AI/ML",
+      description: "TekMindz provides AI consulting and machine learning strategy services through comprehensive AI assessments, ML roadmaps, and data scie consulting that deliver measurable AI transformation ROI.",
+      link: ""
     }
   ];
 

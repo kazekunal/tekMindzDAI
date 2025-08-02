@@ -55,20 +55,17 @@ const VisionSection = () => {
                 <h2 className="text-5xl lg:text-6xl text-gray-900 leading-tight space-grotesk">
                   Overview Of{' '}
                   <span className="block">
-                    <span className="font-bold text-gray-900">TekMindzDAI Vision</span>
+                    <span className="font-bold text-gray-900">TekAILabs <br/>Vision & Mission</span>
                   </span>
                 </h2>
               </div>
 
               <div className="space-y-6">
                 <p className="text-gray-700 text-lg leading-relaxed roboto">
-                  At TekMindzDAI, we envision a future where data and artificial intelligence 
-                  seamlessly integrate into business operations, driving innovation and value. Our 
-                  mission is to empower organizations with cutting-edge AI solutions that 
-                  transform raw data into actionable intelligence. Through a combination of 
-                  advanced analytics, machine learning, and human expertise, we help businesses 
-                  navigate the complexities of digital transformation while maintaining a focus on 
-                  ethical AI practices and sustainable outcomes.
+                To be the most trusted catalyst for AI innovation across emerging markets, empowering businesses, institutions, and communities, to thrive through intelligent, inclusive, and impactful innovation.
+                </p>
+                <p className="text-gray-700 text-lg leading-relaxed roboto">
+                At TekAiLabs, we build real-world AI solutions that matter. Through advanced GenAI training, vertical consulting, and smart AI products, we enable enterprises and governments to unlock intelligence, automate processes, and create sustainable growth. We are committed to democratizing access to AI by blending technology with trust.
                 </p>
               </div>
 

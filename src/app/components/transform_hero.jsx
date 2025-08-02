@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -63,8 +64,8 @@ const HeroSection = ({
           <div className="absolute bottom-32 left-40 w-24 h-24 border border-[#98be2f] rounded-full opacity-30"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
-          {/* Dynamic Breadcrumb */}
+        {/* Dynamic Breadcrumb with Next.js Link - Positioned above everything */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 relative z-50">
           <div className="mb-8">
             <Breadcrumb>
               <BreadcrumbList>
@@ -76,11 +77,13 @@ const HeroSection = ({
                           {item.label}
                         </BreadcrumbPage>
                       ) : (
-                        <BreadcrumbLink 
-                          href={item.href || '#'} 
-                          className="text-gray-400 hover:text-gray-300 Roboto"
-                        >
-                          {item.label}
+                        <BreadcrumbLink asChild>
+                          <Link 
+                            href={item.href || '#'} 
+                            className="text-gray-400 hover:text-gray-300 Roboto transition-colors duration-200 relative z-50"
+                          >
+                            {item.label}
+                          </Link>
                         </BreadcrumbLink>
                       )}
                     </BreadcrumbItem>
@@ -92,6 +95,9 @@ const HeroSection = ({
               </BreadcrumbList>
             </Breadcrumb>
           </div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="grid lg:grid-cols-[7fr_3fr] gap-12 items-center min-h-[70vh]">
             {/* Left Content */}
