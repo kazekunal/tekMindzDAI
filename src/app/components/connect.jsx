@@ -100,7 +100,7 @@ export default function ContactForm() {
               </div>
               <div>
                 <h3 className="text-white text-lg md:text-xl font-semibold mb-1">Email Address</h3>
-                <p className="text-blue-200 text-sm md:text-base">talk@tekmindz.com</p>
+                <p className="text-blue-200 text-sm md:text-base">talk@tekailabs.ai</p>
               </div>
             </div>
 
